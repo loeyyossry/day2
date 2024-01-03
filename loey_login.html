@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="loey_login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input class="txt" id="username" type="text" placeholder="username..">
+            <br>
+            <input class="txt" id="password" type="password" placeholder="password..">
+        </form>
+        <button  class="btn" onclick="validlogin()">Login</button>
+        <p><a href="loey_signup.html">create account</a></p>
+        <p><a href="loey_forgetpassword.html">forget password</a></p>
+    </div>
+    <br>
+    <div class="login-container">
+        <h1>sign up</h1>
+        <form>
+            <input class="txt" id="username" type="text" placeholder="username..">
+            <br>
+            <input class="txt" id="Email" type="text" placeholder=" Phone number..">
+                <br>
+            <input class="txt" id="password" type="password" placeholder="password..">
+            <br>
+            <input class="txt" id="confirmpassword" type="password" placeholder="confirmpassword..">
+            <br>
+            <input type="radio"  name="male_radio" id="male_radio">
+            <label >male</label>
+            <input type="radio" name="female_radio" id="female_radio">
+            <label >female</label>
+            <br>
+            <select name="city_select" id="city_select">
+                <option value="Giza">Giza</option>
+                <option value="Giza">cairo</option>
+                <option value="Giza">alex</option>
+                <option value="Giza">kafr 8ataty</option>
+            </select>
+        </form>
+        <button  class="btn" onclick="validform()">signup</button>
+       
+    <script src="loey_log and signup and forget.js"></script>
+</body>
+</html>

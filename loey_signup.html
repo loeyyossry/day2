@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loey_signup.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>signup</h1>
+        <form>
+            <input class="txt" id="username" type="text" placeholder="username..">
+            <br>
+            <input class="txt" id="Phone" type="text" placeholder=" Phone number..">
+                <br>
+            <input class="txt" id="password" type="password" placeholder="password..">
+            <br>
+            <input class="txt" id="age" type="text" placeholder="your age..">
+            <br>
+            <input class="txt" id="confirmpassword" type="password" placeholder="confirmpassword..">
+            <br>
+            <input type="radio"  name="male_radio" id="male_radio">
+            <label >male</label>
+            <input type="radio" name="male_radio" id="female_radio">
+            <label >female</label>
+            <br>
+            <select name="city_select" id="city_select">
+                <option value="Giza">Giza</option>
+                <option value="Giza">cairo</option>
+                <option value="Giza">alex</option>
+                <option value="Giza">kafr 8ataty</option>
+            </select>
+        </form>
+        <button  class="btn" onclick="validform()">signup</button>
+       
+    </div>
+    <br>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input class="txt" id="username" type="text" placeholder="username..">
+            <br>
+            <input class="txt" id="password" type="password" placeholder="password..">
+        </form>
+        <button  class="btn" onclick="validlogin()">Login</button>
+        <p><a href="loey_signup.html">create account</a></p>
+        <p><a href="loey_forgetpassword.html">forget password</a></p>
+    </div>
+    <br>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loey_forgetpassword.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>forget password</h1>
+        <form>
+            <input class="txt" id="lusr" type="text" placeholder="enter your username ..">
+            <br>
+            <input class="txt" id="lpass" type="text" placeholder="enter your password..">
+            
+        </form>
+        <button  class="btn" onclick="resetPassword()">update password</button>
+        <p><a href="signup.html">create account</a></p>
+    </div>
+</body>
+</html>
+    <script src="loey_log and signup and forget.js"></script>
+</body>
+</html>

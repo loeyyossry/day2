@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loey_quz.css">
+</head>
+<body>
+    <h2> review from </h2>
+    <form action="#"  id="quizForm">
+        <table>
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>are your satisfied with our service?</td>
+                    <td>
+                        <label><input type="radio" name="q1" value="a"> yes</label>
+                        <label><input type="radio" name="q1" value="b"> no</label>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>do you find our website user-friendly</td>
+                    <td>
+                        <label><input type="radio" name="q2" value="a"> yes</label>
+                        <label><input type="radio" name="q2" value="b"> no</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>would you recommend us to others</td>
+                    <td>
+                        <label><input type="radio" name="q3" value="a">yes</label>
+                        <label><input type="radio" name="q3" value="b">no</label>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <input type="button" onclick="calculateScore()" value="Submit" id="submit">
+        <input type="button" onclick="no()"value="back to home page">
+        <p id="result"></p>
+    </form>
+    <script>
+        function calculateScore() {
+    var questions = document.querySelectorAll('input[type="radio"]:checked');
+    var score = 0;
+
+    questions.forEach(function (question) {
+      
+        if (question.value === 'a') {
+            score++;
+     
+        }
+    });
+    
+    var resultElement = document.getElementById('result');
+    resultElement.innerHTML = 'Your yes: ' + score + ' out of  ' + questions.length + ' questions';
+   // location.href="loey_home.html";
+}
+function no ()
+
+  {
+    
+    location.href="loey_home.html";
+}
+    </script>
+</body>
+</html>
